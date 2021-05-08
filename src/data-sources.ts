@@ -1,5 +1,5 @@
-import path from 'path'
-import XLSX from 'xlsx'
+import * as path from 'path'
+import * as XLSX from 'xlsx'
 import { sheetByName, parseAsDaily, parseAsPrefectures } from './util'
 
 type DataSrouce = {
