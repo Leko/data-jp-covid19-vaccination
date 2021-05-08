@@ -1,30 +1,23 @@
 {
   "name": "data-jp-covid19-vaccination",
   "version": "0.0.1",
+  "private": true,
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "update-csv": "ts-node -T src/main.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Leko/data-jp-covid19-vaccination.git"
-  },
+  "repository": "Leko/data-jp-covid19-vaccination",
   "author": "Leko <leko.noor@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Leko/data-jp-covid19-vaccination/issues"
-  },
-  "homepage": "https://github.com/Leko/data-jp-covid19-vaccination#readme",
-  "devDependencies": {
-    "@types/node-fetch": "^2.5.10",
-    "prettier": "^2.2.1",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.2.4"
-  },
   "dependencies": {
     "@fast-csv/format": "^4.3.5",
     "node-fetch": "^2.6.1",
+    "ts-node": "^9.1.1",
     "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.10",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
   }
 }
