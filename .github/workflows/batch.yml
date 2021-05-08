@@ -2,7 +2,7 @@ name: batch
 
 on:
   schedule:
-    - cron: '25 * * * *'
+    - cron: '0 0,12 * * *'
 
 jobs:
   update_csv:
