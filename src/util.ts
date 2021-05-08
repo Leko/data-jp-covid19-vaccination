@@ -41,7 +41,7 @@ export const parseAsDaily = (
     dataStartRow: number
   },
   rowParser: (sheet: XLSX.WorkSheet, rowCount: number) => DailyRow
-) => (sheet: XLSX.WorkSheet): { latestDate: Date; data: string[][] } => {
+) => (sheet: XLSX.WorkSheet): { latestDate: null; data: string[][] } => {
   const data: DailyRow[] = []
   for (
     let rowCount = args.dataStartRow;
@@ -53,7 +53,7 @@ export const parseAsDaily = (
   const sorted = data.sort((a, b) => a.date.getTime() - b.date.getTime())
 
   return {
-    latestDate: sorted[sorted.length - 1]!.date,
+    latestDate: null,
     data: [
       [
         'date',

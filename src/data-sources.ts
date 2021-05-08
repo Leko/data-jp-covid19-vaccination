@@ -6,7 +6,9 @@ type DataSrouce = {
   base: string
   url: string
   getSheet: (ws: XLSX.WorkBook) => XLSX.WorkSheet
-  getData: (sheet: XLSX.WorkSheet) => { latestDate: Date; data: string[][] }
+  getData: (
+    sheet: XLSX.WorkSheet
+  ) => { latestDate: Date | null; data: string[][] }
 }
 
 export const dataSources: DataSrouce[] = [

@@ -17,13 +17,18 @@ Promise.all(
         if (!fs.existsSync(ds.base)) {
           fs.mkdirSync(ds.base, { recursive: true })
         }
-        const filePath = path.join(ds.base, `${toYYYYMMDD(latestDate)}.csv`)
+        const latest = path.join(ds.base, 'latest.csv')
 
         return new Promise((resolve, reject) => {
-          writeToPath(filePath, data)
+          writeToPath(latest, data)
             .on('error', reject)
             .on('finish', () => {
-              fs.copyFileSync(filePath, path.join(ds.base, 'latest.csv'))
+              if (latestDate) {
+                fs.copyFileSync(
+                  latest,
+                  path.join(ds.base, `${toYYYYMMDD(latestDate)}.csv`)
+                )
+              }
               resolve(null)
             })
         })
