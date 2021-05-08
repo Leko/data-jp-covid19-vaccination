@@ -1,0 +1,26 @@
+{
+  "name": "data-jp-covid19-vaccination",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "lint": "tsc --noEmit src/main.ts src/create-pull-request.ts",
+    "update-csv": "ts-node -T src/main.ts",
+    "collect-artifacts": "ts-node -T src/create-pull-request.ts"
+  },
+  "repository": "Leko/data-jp-covid19-vaccination",
+  "author": "Leko <leko.noor@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fast-csv/format": "^4.3.5",
+    "node-fetch": "^2.6.1",
+    "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2",
+    "@types/node-fetch": "^2.5.10",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
