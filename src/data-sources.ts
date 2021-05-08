@@ -13,7 +13,7 @@ type DataSrouce = {
 
 export const dataSources: DataSrouce[] = [
   {
-    base: path.join(__dirname, '..', 'data', 'daily', 'IRYO'),
+    base: path.join(__dirname, '..', 'data', 'daily', 'medical_workers'),
     url: 'https://www.kantei.go.jp/jp/content/IRYO-vaccination_data.xlsx',
     getSheet: sheetByName('医療従事者'),
     getData: parseAsDaily(
@@ -29,7 +29,7 @@ export const dataSources: DataSrouce[] = [
     ),
   },
   {
-    base: path.join(__dirname, '..', 'data', 'daily', 'KOREI'),
+    base: path.join(__dirname, '..', 'data', 'daily', 'senior_citizen'),
     url: 'https://www.kantei.go.jp/jp/content/KOREI-vaccination_data.xlsx',
     getSheet: sheetByName('高齢者等'),
     getData: parseAsDaily(
@@ -45,7 +45,7 @@ export const dataSources: DataSrouce[] = [
     ),
   },
   {
-    base: path.join(__dirname, '..', 'data', 'prefecture', 'IRYO'),
+    base: path.join(__dirname, '..', 'data', 'prefecture', 'medical_workers'),
     url:
       'https://www.kantei.go.jp/jp/content/IRYO-kenbetsu-vaccination_data.xlsx',
     getSheet: sheetByName('医療従事者'),
@@ -66,7 +66,7 @@ export const dataSources: DataSrouce[] = [
     ),
   },
   {
-    base: path.join(__dirname, '..', 'data', 'prefecture', 'KOREI'),
+    base: path.join(__dirname, '..', 'data', 'prefecture', 'senior_citizen'),
     url:
       'https://www.kantei.go.jp/jp/content/KOREI-kenbetsu-vaccination_data.xlsx',
     getSheet: sheetByName('高齢者等'),
