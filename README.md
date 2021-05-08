@@ -1,5 +1,7 @@
 # data-jp-covid19-vaccination
 
+This is an **unofficial repository** of CSVs extracted from the Excel files posted on [the Prime Minister of Japan website](https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html). This repository will be updated when the official data is updated.
+
 ## Directory structure
 
 If you just want to get the latest data, please refer to `latest.csv` in each directory. If you want to get historical data by prefecture, please refer to `{{DATE}}.csv`. Note that historical data can be missing. Since the government does not update the official data every day, it will only be saved on the day the data is updated.
