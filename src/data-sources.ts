@@ -1,6 +1,6 @@
 import * as path from 'path'
 import * as XLSX from 'xlsx'
-import { sheetByName, parseAsDaily, parseAsPrefectures } from './util'
+import { sheetByName, parseAsNationwide, parseAsPrefectures } from './util'
 
 type DataSrouce = {
   base: string
@@ -13,34 +13,34 @@ type DataSrouce = {
 
 export const dataSources: DataSrouce[] = [
   {
-    base: path.join(__dirname, '..', 'data', 'daily', 'medical_workers'),
+    base: path.join(__dirname, '..', 'data', 'nationwide', 'medical_workers'),
     url: 'https://www.kantei.go.jp/jp/content/IRYO-vaccination_data.xlsx',
     getSheet: sheetByName('医療従事者'),
-    getData: parseAsDaily(
+    getData: parseAsNationwide(
       {
         dataStartRow: 5,
       },
       (sheet, rowCount) => ({
         date: new Date(sheet[`A${rowCount}`].w!),
         totalVaccinations: parseInt(sheet[`C${rowCount}`].v, 10),
-        peopleVaccinated: parseInt(sheet[`D${rowCount}`].v, 10),
-        peopleFullyVaccinated: parseInt(sheet[`E${rowCount}`].v, 10),
+        firstVaccinations: parseInt(sheet[`D${rowCount}`].v, 10),
+        secondVaccinations: parseInt(sheet[`E${rowCount}`].v, 10),
       })
     ),
   },
   {
-    base: path.join(__dirname, '..', 'data', 'daily', 'senior_citizen'),
+    base: path.join(__dirname, '..', 'data', 'nationwide', 'senior_citizen'),
     url: 'https://www.kantei.go.jp/jp/content/KOREI-vaccination_data.xlsx',
     getSheet: sheetByName('高齢者等'),
-    getData: parseAsDaily(
+    getData: parseAsNationwide(
       {
         dataStartRow: 5,
       },
       (sheet, rowCount) => ({
         date: new Date(sheet[`A${rowCount}`].w!),
         totalVaccinations: parseInt(sheet[`C${rowCount}`].v, 10),
-        peopleVaccinated: parseInt(sheet[`D${rowCount}`].v, 10),
-        peopleFullyVaccinated: parseInt(sheet[`E${rowCount}`].v, 10),
+        firstVaccinations: parseInt(sheet[`D${rowCount}`].v, 10),
+        secondVaccinations: parseInt(sheet[`E${rowCount}`].v, 10),
       })
     ),
   },
@@ -59,8 +59,8 @@ export const dataSources: DataSrouce[] = [
           prefectureCode: code,
           prefectureName: name,
           totalVaccinations: parseInt(sheet[`B${rowCount}`].v, 10),
-          peopleVaccinated: parseInt(sheet[`C${rowCount}`].v, 10),
-          peopleFullyVaccinated: parseInt(sheet[`D${rowCount}`].v, 10),
+          firstVaccinations: parseInt(sheet[`C${rowCount}`].v, 10),
+          secondVaccinations: parseInt(sheet[`D${rowCount}`].v, 10),
         }
       }
     ),
@@ -80,8 +80,8 @@ export const dataSources: DataSrouce[] = [
           prefectureCode: code,
           prefectureName: name,
           totalVaccinations: parseInt(sheet[`B${rowCount}`].v, 10),
-          peopleVaccinated: parseInt(sheet[`C${rowCount}`].v, 10),
-          peopleFullyVaccinated: parseInt(sheet[`D${rowCount}`].v, 10),
+          firstVaccinations: parseInt(sheet[`C${rowCount}`].v, 10),
+          secondVaccinations: parseInt(sheet[`D${rowCount}`].v, 10),
         }
       }
     ),

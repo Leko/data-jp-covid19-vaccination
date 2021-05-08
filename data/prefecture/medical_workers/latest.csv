@@ -1,4 +1,4 @@
-code,prefecture,total_vaccinations,people_vaccinated,people_fully_vaccinated
+code,prefecture,total_vaccinations,1st_vaccinations,2nd_vaccinations
 01,北海道,146108,95871,50237
 02,青森県,38446,26937,11509
 03,岩手県,40626,30022,10604

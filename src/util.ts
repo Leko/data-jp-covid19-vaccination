@@ -3,16 +3,16 @@ import * as XLSX from 'xlsx'
 type DailyRow = {
   date: Date
   totalVaccinations: number
-  peopleVaccinated: number
-  peopleFullyVaccinated: number
+  firstVaccinations: number
+  secondVaccinations: number
 }
 
 type PrefectureRow = {
   prefectureCode: string
   prefectureName: string
   totalVaccinations: number
-  peopleVaccinated: number
-  peopleFullyVaccinated: number
+  firstVaccinations: number
+  secondVaccinations: number
 }
 
 export function toYYYYMMDD(d: Date): string {
@@ -35,7 +35,7 @@ export const sheetByName = (name: string) => (
   return sheet
 }
 
-export const parseAsDaily = (
+export const parseAsNationwide = (
   args: {
     // 1-index
     dataStartRow: number
@@ -58,15 +58,15 @@ export const parseAsDaily = (
       [
         'date',
         'total_vaccinations',
-        'people_vaccinated',
-        'people_fully_vaccinated',
+        '1st_vaccinations',
+        '2nd_vaccinations',
       ],
     ].concat(
       sorted.map((item) => [
         toYYYYMMDD(item.date),
         String(item.totalVaccinations),
-        String(item.peopleVaccinated),
-        String(item.peopleFullyVaccinated),
+        String(item.firstVaccinations),
+        String(item.secondVaccinations),
       ])
     ),
   }
@@ -107,16 +107,16 @@ export const parseAsPrefectures = (
         'code',
         'prefecture',
         'total_vaccinations',
-        'people_vaccinated',
-        'people_fully_vaccinated',
+        '1st_vaccinations',
+        '2nd_vaccinations',
       ],
     ].concat(
       data.map((item) => [
         item.prefectureCode,
         item.prefectureName,
         String(item.totalVaccinations),
-        String(item.peopleVaccinated),
-        String(item.peopleFullyVaccinated),
+        String(item.firstVaccinations),
+        String(item.secondVaccinations),
       ])
     ),
   }

@@ -1,4 +1,4 @@
-date,total_vaccinations,people_vaccinated,people_fully_vaccinated
+date,total_vaccinations,1st_vaccinations,2nd_vaccinations
 2021-04-13,53986,13896,40090
 2021-04-14,50996,9569,41427
 2021-04-15,52620,16637,35983
