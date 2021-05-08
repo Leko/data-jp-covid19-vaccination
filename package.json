@@ -4,9 +4,8 @@
   "private": true,
   "description": "",
   "scripts": {
-    "lint": "tsc --noEmit src/main.ts src/create-pull-request.ts",
-    "update-csv": "ts-node -T src/main.ts",
-    "collect-artifacts": "ts-node -T src/create-pull-request.ts"
+    "lint": "tsc --noEmit src/main.ts",
+    "update-csv": "ts-node -T src/main.ts"
   },
   "repository": "Leko/data-jp-covid19-vaccination",
   "author": "Leko <leko.noor@gmail.com>",
