@@ -14,13 +14,13 @@
   "dependencies": {
     "@fast-csv/format": "^4.3.5",
     "node-fetch": "^2.6.1",
-    "ts-node": "^9.1.1",
     "xlsx": "^0.16.9"
   },
   "devDependencies": {
     "@types/node": "^15.0.2",
     "@types/node-fetch": "^2.5.10",
     "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
   }
 }
