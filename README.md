@@ -1,10 +1,10 @@
 # data-jp-covid19-vaccination
 
-This is an **unofficial repository** of CSVs extracted from the Excel files posted on [the Prime Minister of Japan website](https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html). This repository will be updated when the official data is updated.
+This is an **unofficial repository** to make the Excel files created by [the Prime Minister of Japan website](https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html) machine-readable. This repository will be automatically updated when the Excel is updated.
 
 ## Directory structure
 
-If you just want to get the latest data, please refer to `latest.csv` or `latest.json` in each directory. If you want to get historical data by prefecture, please refer to `{{DATE}}.csv` or `{{DATE}}.json`. Note that historical data can be missing. Since the government does not update the official data every day, it will only be saved on the day the data is updated.
+If you just want to get the latest data, you can refer to `latest.csv` or `latest.json` in each directory. If you're going to get historical data by prefecture, please refer to `{{DATE}}.csv` or `{{DATE}}.json`. Note that historical data may not be updated daily as the government does not update the official data every day. They will be saved on the day the Excel is updated.
 
 ```
 data/
@@ -51,7 +51,7 @@ code,prefecture,total_vaccinations,1st_vaccinations,2nd_vaccinations
 01,北海道,146108,95871,50237
 ```
 
-- `code`: For sorting
+- `code`: For sorting. `01`~`46`
 - `prefecture`: Prefecture name such as `北海道`, `東京都`, `京都府`, and `神奈川県`
 - `total_vaccinations`: The number of times total vaccinations
 - `1st_vaccinations`: The number of times the first vaccine was given on that day
@@ -93,7 +93,7 @@ code,prefecture,total_vaccinations,1st_vaccinations,2nd_vaccinations
 ]
 ```
 
-- `code`: For sorting
+- `code`: For sorting. `01`~`46`
 - `prefecture`: Prefecture name such as `北海道`, `東京都`, `京都府`, and `神奈川県`
 - `total_vaccinations`: The number of times total vaccinations
 - `1st_vaccinations`: The number of times the first vaccine was given on that day
