@@ -15,6 +15,12 @@ type PrefectureRow = {
   secondVaccinations: number
 }
 
+export type ParserResult = {
+  latestDate?: Date
+  headers: string[]
+  data: (string | number)[][]
+}
+
 export function toYYYYMMDD(d: Date): string {
   return (
     d.getFullYear() +
@@ -41,7 +47,7 @@ export const parseAsNationwide = (
     dataStartRow: number
   },
   rowParser: (sheet: XLSX.WorkSheet, rowCount: number) => DailyRow
-) => (sheet: XLSX.WorkSheet): { latestDate: null; data: string[][] } => {
+) => (sheet: XLSX.WorkSheet): ParserResult => {
   const data: DailyRow[] = []
   for (
     let rowCount = args.dataStartRow;
@@ -53,22 +59,18 @@ export const parseAsNationwide = (
   const sorted = data.sort((a, b) => a.date.getTime() - b.date.getTime())
 
   return {
-    latestDate: null,
-    data: [
-      [
-        'date',
-        'total_vaccinations',
-        '1st_vaccinations',
-        '2nd_vaccinations',
-      ],
-    ].concat(
-      sorted.map((item) => [
-        toYYYYMMDD(item.date),
-        String(item.totalVaccinations),
-        String(item.firstVaccinations),
-        String(item.secondVaccinations),
-      ])
-    ),
+    headers: [
+      'date',
+      'total_vaccinations',
+      '1st_vaccinations',
+      '2nd_vaccinations',
+    ],
+    data: sorted.map((item) => [
+      toYYYYMMDD(item.date),
+      item.totalVaccinations,
+      item.firstVaccinations,
+      item.secondVaccinations,
+    ]),
   }
 }
 
@@ -78,7 +80,7 @@ export const parseAsPrefectures = (
     dataStartRow: number
   },
   rowParser: (sheet: XLSX.WorkSheet, rowCount: number) => PrefectureRow
-) => (sheet: XLSX.WorkSheet): { latestDate: Date; data: string[][] } => {
+) => (sheet: XLSX.WorkSheet): ParserResult => {
   const data: PrefectureRow[] = []
   for (
     let rowCount = args.dataStartRow;
@@ -102,22 +104,19 @@ export const parseAsPrefectures = (
 
   return {
     latestDate,
-    data: [
-      [
-        'code',
-        'prefecture',
-        'total_vaccinations',
-        '1st_vaccinations',
-        '2nd_vaccinations',
-      ],
-    ].concat(
-      data.map((item) => [
-        item.prefectureCode,
-        item.prefectureName,
-        String(item.totalVaccinations),
-        String(item.firstVaccinations),
-        String(item.secondVaccinations),
-      ])
-    ),
+    headers: [
+      'code',
+      'prefecture',
+      'total_vaccinations',
+      '1st_vaccinations',
+      '2nd_vaccinations',
+    ],
+    data: data.map((item) => [
+      item.prefectureCode,
+      item.prefectureName,
+      item.totalVaccinations,
+      item.firstVaccinations,
+      item.secondVaccinations,
+    ]),
   }
 }
