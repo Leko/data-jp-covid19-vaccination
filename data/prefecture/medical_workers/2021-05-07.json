@@ -1,0 +1,324 @@
+[
+  {
+    "code": "01",
+    "prefecture": "北海道",
+    "total_vaccinations": "164622",
+    "1st_vaccinations": "110357",
+    "2nd_vaccinations": "54265"
+  },
+  {
+    "code": "02",
+    "prefecture": "青森県",
+    "total_vaccinations": "43071",
+    "1st_vaccinations": "30210",
+    "2nd_vaccinations": "12861"
+  },
+  {
+    "code": "03",
+    "prefecture": "岩手県",
+    "total_vaccinations": "49643",
+    "1st_vaccinations": "37849",
+    "2nd_vaccinations": "11794"
+  },
+  {
+    "code": "04",
+    "prefecture": "宮城県",
+    "total_vaccinations": "74061",
+    "1st_vaccinations": "54120",
+    "2nd_vaccinations": "19941"
+  },
+  {
+    "code": "05",
+    "prefecture": "秋田県",
+    "total_vaccinations": "36793",
+    "1st_vaccinations": "24963",
+    "2nd_vaccinations": "11830"
+  },
+  {
+    "code": "06",
+    "prefecture": "山形県",
+    "total_vaccinations": "43627",
+    "1st_vaccinations": "30693",
+    "2nd_vaccinations": "12934"
+  },
+  {
+    "code": "07",
+    "prefecture": "福島県",
+    "total_vaccinations": "64642",
+    "1st_vaccinations": "46232",
+    "2nd_vaccinations": "18410"
+  },
+  {
+    "code": "08",
+    "prefecture": "茨城県",
+    "total_vaccinations": "91573",
+    "1st_vaccinations": "65786",
+    "2nd_vaccinations": "25787"
+  },
+  {
+    "code": "09",
+    "prefecture": "栃木県",
+    "total_vaccinations": "63575",
+    "1st_vaccinations": "45934",
+    "2nd_vaccinations": "17641"
+  },
+  {
+    "code": "10",
+    "prefecture": "群馬県",
+    "total_vaccinations": "66539",
+    "1st_vaccinations": "47455",
+    "2nd_vaccinations": "19084"
+  },
+  {
+    "code": "11",
+    "prefecture": "埼玉県",
+    "total_vaccinations": "196355",
+    "1st_vaccinations": "144470",
+    "2nd_vaccinations": "51885"
+  },
+  {
+    "code": "12",
+    "prefecture": "千葉県",
+    "total_vaccinations": "160846",
+    "1st_vaccinations": "115257",
+    "2nd_vaccinations": "45589"
+  },
+  {
+    "code": "13",
+    "prefecture": "東京都",
+    "total_vaccinations": "404983",
+    "1st_vaccinations": "290463",
+    "2nd_vaccinations": "114520"
+  },
+  {
+    "code": "14",
+    "prefecture": "神奈川県",
+    "total_vaccinations": "215694",
+    "1st_vaccinations": "167971",
+    "2nd_vaccinations": "47723"
+  },
+  {
+    "code": "15",
+    "prefecture": "新潟県",
+    "total_vaccinations": "76670",
+    "1st_vaccinations": "56252",
+    "2nd_vaccinations": "20418"
+  },
+  {
+    "code": "16",
+    "prefecture": "富山県",
+    "total_vaccinations": "42755",
+    "1st_vaccinations": "30794",
+    "2nd_vaccinations": "11961"
+  },
+  {
+    "code": "17",
+    "prefecture": "石川県",
+    "total_vaccinations": "44400",
+    "1st_vaccinations": "33285",
+    "2nd_vaccinations": "11115"
+  },
+  {
+    "code": "18",
+    "prefecture": "福井県",
+    "total_vaccinations": "36859",
+    "1st_vaccinations": "28972",
+    "2nd_vaccinations": "7887"
+  },
+  {
+    "code": "19",
+    "prefecture": "山梨県",
+    "total_vaccinations": "24275",
+    "1st_vaccinations": "16466",
+    "2nd_vaccinations": "7809"
+  },
+  {
+    "code": "20",
+    "prefecture": "長野県",
+    "total_vaccinations": "67184",
+    "1st_vaccinations": "49713",
+    "2nd_vaccinations": "17471"
+  },
+  {
+    "code": "21",
+    "prefecture": "岐阜県",
+    "total_vaccinations": "65328",
+    "1st_vaccinations": "46302",
+    "2nd_vaccinations": "19026"
+  },
+  {
+    "code": "22",
+    "prefecture": "静岡県",
+    "total_vaccinations": "106529",
+    "1st_vaccinations": "79212",
+    "2nd_vaccinations": "27317"
+  },
+  {
+    "code": "23",
+    "prefecture": "愛知県",
+    "total_vaccinations": "232493",
+    "1st_vaccinations": "178287",
+    "2nd_vaccinations": "54206"
+  },
+  {
+    "code": "24",
+    "prefecture": "三重県",
+    "total_vaccinations": "62321",
+    "1st_vaccinations": "45350",
+    "2nd_vaccinations": "16971"
+  },
+  {
+    "code": "25",
+    "prefecture": "滋賀県",
+    "total_vaccinations": "47662",
+    "1st_vaccinations": "35145",
+    "2nd_vaccinations": "12517"
+  },
+  {
+    "code": "26",
+    "prefecture": "京都府",
+    "total_vaccinations": "85754",
+    "1st_vaccinations": "62704",
+    "2nd_vaccinations": "23050"
+  },
+  {
+    "code": "27",
+    "prefecture": "大阪府",
+    "total_vaccinations": "233690",
+    "1st_vaccinations": "155198",
+    "2nd_vaccinations": "78492"
+  },
+  {
+    "code": "28",
+    "prefecture": "兵庫県",
+    "total_vaccinations": "149956",
+    "1st_vaccinations": "104267",
+    "2nd_vaccinations": "45689"
+  },
+  {
+    "code": "29",
+    "prefecture": "奈良県",
+    "total_vaccinations": "47112",
+    "1st_vaccinations": "35925",
+    "2nd_vaccinations": "11187"
+  },
+  {
+    "code": "30",
+    "prefecture": "和歌山県",
+    "total_vaccinations": "40201",
+    "1st_vaccinations": "28574",
+    "2nd_vaccinations": "11627"
+  },
+  {
+    "code": "31",
+    "prefecture": "鳥取県",
+    "total_vaccinations": "25037",
+    "1st_vaccinations": "17980",
+    "2nd_vaccinations": "7057"
+  },
+  {
+    "code": "32",
+    "prefecture": "島根県",
+    "total_vaccinations": "28004",
+    "1st_vaccinations": "20664",
+    "2nd_vaccinations": "7340"
+  },
+  {
+    "code": "33",
+    "prefecture": "岡山県",
+    "total_vaccinations": "68993",
+    "1st_vaccinations": "51696",
+    "2nd_vaccinations": "17297"
+  },
+  {
+    "code": "34",
+    "prefecture": "広島県",
+    "total_vaccinations": "103296",
+    "1st_vaccinations": "76197",
+    "2nd_vaccinations": "27099"
+  },
+  {
+    "code": "35",
+    "prefecture": "山口県",
+    "total_vaccinations": "65528",
+    "1st_vaccinations": "45438",
+    "2nd_vaccinations": "20090"
+  },
+  {
+    "code": "36",
+    "prefecture": "徳島県",
+    "total_vaccinations": "39017",
+    "1st_vaccinations": "29576",
+    "2nd_vaccinations": "9441"
+  },
+  {
+    "code": "37",
+    "prefecture": "香川県",
+    "total_vaccinations": "38654",
+    "1st_vaccinations": "26037",
+    "2nd_vaccinations": "12617"
+  },
+  {
+    "code": "38",
+    "prefecture": "愛媛県",
+    "total_vaccinations": "60266",
+    "1st_vaccinations": "45291",
+    "2nd_vaccinations": "14975"
+  },
+  {
+    "code": "39",
+    "prefecture": "高知県",
+    "total_vaccinations": "37115",
+    "1st_vaccinations": "24006",
+    "2nd_vaccinations": "13109"
+  },
+  {
+    "code": "40",
+    "prefecture": "福岡県",
+    "total_vaccinations": "162636",
+    "1st_vaccinations": "109771",
+    "2nd_vaccinations": "52865"
+  },
+  {
+    "code": "41",
+    "prefecture": "佐賀県",
+    "total_vaccinations": "46287",
+    "1st_vaccinations": "32839",
+    "2nd_vaccinations": "13448"
+  },
+  {
+    "code": "42",
+    "prefecture": "長崎県",
+    "total_vaccinations": "65212",
+    "1st_vaccinations": "44904",
+    "2nd_vaccinations": "20308"
+  },
+  {
+    "code": "43",
+    "prefecture": "熊本県",
+    "total_vaccinations": "87289",
+    "1st_vaccinations": "60846",
+    "2nd_vaccinations": "26443"
+  },
+  {
+    "code": "44",
+    "prefecture": "大分県",
+    "total_vaccinations": "52455",
+    "1st_vaccinations": "38970",
+    "2nd_vaccinations": "13485"
+  },
+  {
+    "code": "45",
+    "prefecture": "宮崎県",
+    "total_vaccinations": "47239",
+    "1st_vaccinations": "32851",
+    "2nd_vaccinations": "14388"
+  },
+  {
+    "code": "46",
+    "prefecture": "鹿児島県",
+    "total_vaccinations": "73668",
+    "1st_vaccinations": "54420",
+    "2nd_vaccinations": "19248"
+  }
+]
