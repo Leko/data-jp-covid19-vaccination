@@ -2,9 +2,11 @@ import * as path from 'path'
 import * as fs from 'fs'
 import * as XLSX from 'xlsx'
 import fetch from 'node-fetch'
-import { writeToPath } from '@fast-csv/format'
 import { dataSources } from './data-sources'
 import { toYYYYMMDD } from './util'
+import { exportAsCSV } from './formatters'
+
+const exporters = [exportAsCSV] as const
 
 Promise.all(
   dataSources.map((ds) =>
@@ -13,25 +15,21 @@ Promise.all(
       .then((buff) => XLSX.read(buff, { type: 'buffer' }))
       .then((workSheet) => ds.getSheet(workSheet))
       .then(async (sheet) => {
-        const { latestDate, data } = ds.getData(sheet)
+        const { latestDate, headers, data } = ds.getData(sheet)
         if (!fs.existsSync(ds.base)) {
           fs.mkdirSync(ds.base, { recursive: true })
         }
-        const latest = path.join(ds.base, 'latest.csv')
-
-        return new Promise((resolve, reject) => {
-          writeToPath(latest, data)
-            .on('error', reject)
-            .on('finish', () => {
-              if (latestDate) {
-                fs.copyFileSync(
-                  latest,
-                  path.join(ds.base, `${toYYYYMMDD(latestDate)}.csv`)
-                )
-              }
-              resolve(null)
-            })
-        })
+        return Promise.all(
+          exporters.map(async (exporter) => {
+            const filePath = await exporter(ds.base, 'latest', headers, data)
+            if (latestDate) {
+              fs.copyFileSync(
+                filePath,
+                path.join(ds.base, `${toYYYYMMDD(latestDate)}.csv`)
+              )
+            }
+          })
+        )
       })
   )
 ).catch((e) => {

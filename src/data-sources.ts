@@ -1,14 +1,17 @@
 import * as path from 'path'
 import * as XLSX from 'xlsx'
-import { sheetByName, parseAsNationwide, parseAsPrefectures } from './util'
+import {
+  ParserResult,
+  sheetByName,
+  parseAsNationwide,
+  parseAsPrefectures,
+} from './util'
 
 type DataSrouce = {
   base: string
   url: string
   getSheet: (ws: XLSX.WorkBook) => XLSX.WorkSheet
-  getData: (
-    sheet: XLSX.WorkSheet
-  ) => { latestDate: Date | null; data: string[][] }
+  getData: (sheet: XLSX.WorkSheet) => ParserResult
 }
 
 export const dataSources: DataSrouce[] = [
