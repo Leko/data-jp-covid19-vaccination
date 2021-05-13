@@ -30,7 +30,7 @@ data/
 
 ## Data structure: CSV
 
-### Data structure: nationwide/\*_/_.csv
+### Data structure: nationwide/\*\*/\*.csv
 
 ```
 head -n2 data/nationwide/medical_workers/latest.csv
@@ -43,7 +43,7 @@ date,total_vaccinations,1st_vaccinations,2nd_vaccinations
 - `1st_vaccinations`: The number of times the first vaccine was given on that day
 - `2nd_vaccinations`: The number of times the second vaccine was given on that day
 
-### Data structure: prefecture/\*_/_.csv
+### Data structure: prefecture/\*\*/\*.csv
 
 ```
 head -n2 data/prefecture/medical_workers/latest.csv
@@ -59,7 +59,7 @@ code,prefecture,total_vaccinations,1st_vaccinations,2nd_vaccinations
 
 ## Data structure: JSON
 
-### Data structure: nationwide/\*_/_.json
+### Data structure: nationwide/\*\*/\*.json
 
 ```json
 [
@@ -78,7 +78,7 @@ code,prefecture,total_vaccinations,1st_vaccinations,2nd_vaccinations
 - `1st_vaccinations`: The number of times the first vaccine was given on that day
 - `2nd_vaccinations`: The number of times the second vaccine was given on that day
 
-### Data structure: prefecture/\*_/_.json
+### Data structure: prefecture/\*\*/\*.json
 
 ```json
 [
