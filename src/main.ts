@@ -4,9 +4,9 @@ import * as XLSX from 'xlsx'
 import fetch from 'node-fetch'
 import { dataSources } from './data-sources'
 import { toYYYYMMDD } from './util'
-import { exportAsCSV } from './formatters'
+import { exportAsCSV, exportAsJSON, exportAsNDJSON } from './formatters'
 
-const exporters = [exportAsCSV] as const
+const exporters = [exportAsCSV, exportAsJSON, exportAsNDJSON] as const
 
 Promise.all(
   dataSources.map((ds) =>
@@ -19,13 +19,15 @@ Promise.all(
         if (!fs.existsSync(ds.base)) {
           fs.mkdirSync(ds.base, { recursive: true })
         }
+
         return Promise.all(
           exporters.map(async (exporter) => {
             const filePath = await exporter(ds.base, 'latest', headers, data)
+            const extName = path.extname(filePath)
             if (latestDate) {
               fs.copyFileSync(
                 filePath,
-                path.join(ds.base, `${toYYYYMMDD(latestDate)}.csv`)
+                path.join(ds.base, toYYYYMMDD(latestDate) + extName)
               )
             }
           })

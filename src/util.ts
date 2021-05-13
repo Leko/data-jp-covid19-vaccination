@@ -18,7 +18,7 @@ type PrefectureRow = {
 export type ParserResult = {
   latestDate?: Date
   headers: string[]
-  data: string[][]
+  data: (string | number)[][]
 }
 
 export function toYYYYMMDD(d: Date): string {
@@ -67,9 +67,9 @@ export const parseAsNationwide = (
     ],
     data: sorted.map((item) => [
       toYYYYMMDD(item.date),
-      String(item.totalVaccinations),
-      String(item.firstVaccinations),
-      String(item.secondVaccinations),
+      item.totalVaccinations,
+      item.firstVaccinations,
+      item.secondVaccinations,
     ]),
   }
 }
@@ -114,9 +114,9 @@ export const parseAsPrefectures = (
     data: data.map((item) => [
       item.prefectureCode,
       item.prefectureName,
-      String(item.totalVaccinations),
-      String(item.firstVaccinations),
-      String(item.secondVaccinations),
+      item.totalVaccinations,
+      item.firstVaccinations,
+      item.secondVaccinations,
     ]),
   }
 }
