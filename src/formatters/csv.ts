@@ -5,7 +5,7 @@ export async function exportAsCSV(
   dir: string,
   baseName: string,
   headers: string[],
-  data: string[][]
+  data: (string | number)[][]
 ): Promise<string> {
   const filePath = path.join(dir, `${baseName}.csv`)
   return new Promise((resolve, reject) => {
