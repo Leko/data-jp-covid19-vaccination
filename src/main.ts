@@ -4,9 +4,9 @@ import * as XLSX from 'xlsx'
 import fetch from 'node-fetch'
 import { dataSources } from './data-sources'
 import { toYYYYMMDD } from './util'
-import { exportAsCSV, exportAsJSON, exportAsNDJSON } from './formatters'
+import { exportAsCSV, exportAsJSON } from './formatters'
 
-const exporters = [exportAsCSV, exportAsJSON, exportAsNDJSON] as const
+const exporters = [exportAsCSV, exportAsJSON] as const
 
 Promise.all(
   dataSources.map((ds) =>
