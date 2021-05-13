@@ -1,6 +1,6 @@
 # data-jp-covid19-vaccination
 
-This is an **unofficial repository** to make the Excel files created by [the Prime Minister of Japan website](https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html) machine-readable. This repository will be automatically updated when the Excel is updated.
+This is an **unofficial repository** to make the Excel files of vaccination results available on [the Prime Minister's Office of Japan (首相官邸) website](https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html) machine-readable. This repository will be automatically updated when the Excel is updated.
 
 ## Directory structure
 
