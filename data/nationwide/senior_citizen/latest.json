@@ -1,32 +1,32 @@
 [
   {
     "date": "2021-04-13",
-    "total_vaccinations": 2262,
-    "1st_vaccinations": 2262,
+    "total_vaccinations": 2374,
+    "1st_vaccinations": 2374,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-14",
-    "total_vaccinations": 2423,
-    "1st_vaccinations": 2423,
+    "total_vaccinations": 2533,
+    "1st_vaccinations": 2533,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-15",
-    "total_vaccinations": 3154,
-    "1st_vaccinations": 3154,
+    "total_vaccinations": 3246,
+    "1st_vaccinations": 3246,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-16",
-    "total_vaccinations": 2613,
-    "1st_vaccinations": 2613,
+    "total_vaccinations": 2875,
+    "1st_vaccinations": 2875,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-17",
-    "total_vaccinations": 3216,
-    "1st_vaccinations": 3216,
+    "total_vaccinations": 3405,
+    "1st_vaccinations": 3405,
     "2nd_vaccinations": 0
   },
   {
@@ -37,152 +37,170 @@
   },
   {
     "date": "2021-04-19",
-    "total_vaccinations": 9581,
-    "1st_vaccinations": 9581,
+    "total_vaccinations": 9971,
+    "1st_vaccinations": 9971,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-20",
-    "total_vaccinations": 15228,
-    "1st_vaccinations": 15228,
+    "total_vaccinations": 15737,
+    "1st_vaccinations": 15737,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-21",
-    "total_vaccinations": 18531,
-    "1st_vaccinations": 18531,
+    "total_vaccinations": 19009,
+    "1st_vaccinations": 19009,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-22",
-    "total_vaccinations": 16617,
-    "1st_vaccinations": 16617,
+    "total_vaccinations": 17055,
+    "1st_vaccinations": 17055,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-23",
-    "total_vaccinations": 12095,
-    "1st_vaccinations": 12095,
+    "total_vaccinations": 12670,
+    "1st_vaccinations": 12670,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-24",
-    "total_vaccinations": 11098,
-    "1st_vaccinations": 11098,
+    "total_vaccinations": 11429,
+    "1st_vaccinations": 11429,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-25",
-    "total_vaccinations": 11865,
-    "1st_vaccinations": 11865,
+    "total_vaccinations": 11955,
+    "1st_vaccinations": 11955,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-26",
-    "total_vaccinations": 18242,
-    "1st_vaccinations": 18242,
+    "total_vaccinations": 19400,
+    "1st_vaccinations": 19400,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-27",
-    "total_vaccinations": 24560,
-    "1st_vaccinations": 24560,
+    "total_vaccinations": 25992,
+    "1st_vaccinations": 25992,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-28",
-    "total_vaccinations": 23697,
-    "1st_vaccinations": 23697,
+    "total_vaccinations": 25301,
+    "1st_vaccinations": 25301,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-29",
-    "total_vaccinations": 9441,
-    "1st_vaccinations": 9441,
+    "total_vaccinations": 10032,
+    "1st_vaccinations": 10032,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-04-30",
-    "total_vaccinations": 17596,
-    "1st_vaccinations": 17596,
+    "total_vaccinations": 18927,
+    "1st_vaccinations": 18927,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-05-01",
-    "total_vaccinations": 15692,
-    "1st_vaccinations": 15692,
+    "total_vaccinations": 16650,
+    "1st_vaccinations": 16650,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-05-02",
-    "total_vaccinations": 16659,
-    "1st_vaccinations": 16659,
+    "total_vaccinations": 17448,
+    "1st_vaccinations": 17448,
     "2nd_vaccinations": 0
   },
   {
     "date": "2021-05-03",
-    "total_vaccinations": 5544,
-    "1st_vaccinations": 4838,
-    "2nd_vaccinations": 706
+    "total_vaccinations": 5796,
+    "1st_vaccinations": 5085,
+    "2nd_vaccinations": 711
   },
   {
     "date": "2021-05-04",
-    "total_vaccinations": 6359,
-    "1st_vaccinations": 5897,
-    "2nd_vaccinations": 462
+    "total_vaccinations": 6419,
+    "1st_vaccinations": 5951,
+    "2nd_vaccinations": 468
   },
   {
     "date": "2021-05-05",
-    "total_vaccinations": 7086,
-    "1st_vaccinations": 6490,
-    "2nd_vaccinations": 596
+    "total_vaccinations": 7712,
+    "1st_vaccinations": 7115,
+    "2nd_vaccinations": 597
   },
   {
     "date": "2021-05-06",
-    "total_vaccinations": 26974,
-    "1st_vaccinations": 24459,
-    "2nd_vaccinations": 2515
+    "total_vaccinations": 27822,
+    "1st_vaccinations": 25065,
+    "2nd_vaccinations": 2757
   },
   {
     "date": "2021-05-07",
-    "total_vaccinations": 24045,
-    "1st_vaccinations": 22001,
-    "2nd_vaccinations": 2044
+    "total_vaccinations": 25225,
+    "1st_vaccinations": 22910,
+    "2nd_vaccinations": 2315
   },
   {
     "date": "2021-05-08",
-    "total_vaccinations": 38919,
-    "1st_vaccinations": 36206,
-    "2nd_vaccinations": 2713
+    "total_vaccinations": 40757,
+    "1st_vaccinations": 37836,
+    "2nd_vaccinations": 2921
   },
   {
     "date": "2021-05-09",
-    "total_vaccinations": 54217,
-    "1st_vaccinations": 48866,
-    "2nd_vaccinations": 5351
+    "total_vaccinations": 58102,
+    "1st_vaccinations": 52717,
+    "2nd_vaccinations": 5385
   },
   {
     "date": "2021-05-10",
-    "total_vaccinations": 64894,
-    "1st_vaccinations": 58754,
-    "2nd_vaccinations": 6140
+    "total_vaccinations": 69526,
+    "1st_vaccinations": 62529,
+    "2nd_vaccinations": 6997
   },
   {
     "date": "2021-05-11",
-    "total_vaccinations": 78682,
-    "1st_vaccinations": 69785,
-    "2nd_vaccinations": 8897
+    "total_vaccinations": 85562,
+    "1st_vaccinations": 75353,
+    "2nd_vaccinations": 10209
   },
   {
     "date": "2021-05-12",
-    "total_vaccinations": 88901,
-    "1st_vaccinations": 79222,
-    "2nd_vaccinations": 9679
+    "total_vaccinations": 98799,
+    "1st_vaccinations": 87198,
+    "2nd_vaccinations": 11601
   },
   {
     "date": "2021-05-13",
-    "total_vaccinations": 66615,
-    "1st_vaccinations": 59899,
-    "2nd_vaccinations": 6716
+    "total_vaccinations": 90769,
+    "1st_vaccinations": 81332,
+    "2nd_vaccinations": 9437
+  },
+  {
+    "date": "2021-05-14",
+    "total_vaccinations": 71379,
+    "1st_vaccinations": 64923,
+    "2nd_vaccinations": 6456
+  },
+  {
+    "date": "2021-05-15",
+    "total_vaccinations": 57172,
+    "1st_vaccinations": 53739,
+    "2nd_vaccinations": 3433
+  },
+  {
+    "date": "2021-05-16",
+    "total_vaccinations": 81795,
+    "1st_vaccinations": 77078,
+    "2nd_vaccinations": 4717
   }
 ]
