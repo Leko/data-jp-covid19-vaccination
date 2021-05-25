@@ -148,5 +148,11 @@
     "total_vaccinations": 249021,
     "1st_vaccinations": 99918,
     "2nd_vaccinations": 149103
+  },
+  {
+    "date": "2021-05-24",
+    "total_vaccinations": 330589,
+    "1st_vaccinations": 136760,
+    "2nd_vaccinations": 193829
   }
 ]
