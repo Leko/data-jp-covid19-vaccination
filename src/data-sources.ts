@@ -23,17 +23,26 @@ export const dataSources: DataSrouce[] = [
       {
         dataStartRow: 6,
       },
-      (sheet, rowCount) => ({
-        date: new Date(sheet[`A${rowCount}`].w!),
-        totalVaccinations: parseInt(sheet[`C${rowCount}`].v, 10),
-        firstVaccinationsPfizer: parseInt(sheet[`D${rowCount}`].v, 10),
-        secondVaccinationsPfizer: parseInt(sheet[`F${rowCount}`].v, 10),
-        firstVaccinationsModerna: parseInt(sheet[`E${rowCount}`]?.v, 10) || 0,
-        secondVaccinationsModerna: parseInt(sheet[`G${rowCount}`]?.v, 10) || 0,
-        // Deprecated
-        firstVaccinations: 0,
-        secondVaccinations: 0,
-      })
+      (sheet, rowCount) => {
+        const firstVaccinationsPfizer = parseInt(sheet[`D${rowCount}`].v, 10)
+        const secondVaccinationsPfizer = parseInt(sheet[`F${rowCount}`].v, 10)
+        const firstVaccinationsModerna =
+          parseInt(sheet[`E${rowCount}`]?.v, 10) || 0
+        const secondVaccinationsModerna =
+          parseInt(sheet[`G${rowCount}`]?.v, 10) || 0
+
+        return {
+          date: new Date(sheet[`A${rowCount}`].w!),
+          totalVaccinations: parseInt(sheet[`C${rowCount}`].v, 10),
+          firstVaccinationsPfizer,
+          secondVaccinationsPfizer,
+          firstVaccinationsModerna,
+          secondVaccinationsModerna,
+          firstVaccinations: firstVaccinationsPfizer + firstVaccinationsModerna,
+          secondVaccinations:
+            secondVaccinationsPfizer + secondVaccinationsModerna,
+        }
+      }
     ),
   },
   {
@@ -44,17 +53,26 @@ export const dataSources: DataSrouce[] = [
       {
         dataStartRow: 6,
       },
-      (sheet, rowCount) => ({
-        date: new Date(sheet[`A${rowCount}`].w!),
-        totalVaccinations: parseInt(sheet[`C${rowCount}`].v, 10),
-        firstVaccinationsPfizer: parseInt(sheet[`D${rowCount}`].v, 10),
-        secondVaccinationsPfizer: parseInt(sheet[`F${rowCount}`].v, 10),
-        firstVaccinationsModerna: parseInt(sheet[`E${rowCount}`]?.v, 10) || 0,
-        secondVaccinationsModerna: parseInt(sheet[`G${rowCount}`]?.v, 10) || 0,
-        // Deprecated
-        firstVaccinations: 0,
-        secondVaccinations: 0,
-      })
+      (sheet, rowCount) => {
+        const firstVaccinationsPfizer = parseInt(sheet[`D${rowCount}`].v, 10)
+        const secondVaccinationsPfizer = parseInt(sheet[`F${rowCount}`].v, 10)
+        const firstVaccinationsModerna =
+          parseInt(sheet[`E${rowCount}`]?.v, 10) || 0
+        const secondVaccinationsModerna =
+          parseInt(sheet[`G${rowCount}`]?.v, 10) || 0
+
+        return {
+          date: new Date(sheet[`A${rowCount}`].w!),
+          totalVaccinations: parseInt(sheet[`C${rowCount}`].v, 10),
+          firstVaccinationsPfizer,
+          secondVaccinationsPfizer,
+          firstVaccinationsModerna,
+          secondVaccinationsModerna,
+          firstVaccinations: firstVaccinationsPfizer + firstVaccinationsModerna,
+          secondVaccinations:
+            secondVaccinationsPfizer + secondVaccinationsModerna,
+        }
+      }
     ),
   },
   {

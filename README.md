@@ -44,8 +44,8 @@ date,total_vaccinations,1st_vaccinations,2nd_vaccinations
 - `2nd_vaccinations_pfizer`: Number of doses of Pfizer vaccine per day for the second time
 - `1st_vaccinations_moderna`: Number of doses of Moderna vaccine per day for the first time
 - `2nd_vaccinations_moderna`: Number of doses of Moderna vaccine per day for the second time
-- `1st_vaccinations`: **Deprecated: Please use `1st_vaccinations_pfizer` instead**
-- `2nd_vaccinations`: **Deprecated: Please use `2nd_vaccinations_pfizer` instead**
+- `1st_vaccinations`: 1st_vaccinations_pfizer + 1st_vaccinations_moderna
+- `2nd_vaccinations`: 2nd_vaccinations_pfizer + 2nd_vaccinations_moderna
 
 ### Data structure: prefecture/\*\*/\*.csv
 
@@ -62,8 +62,8 @@ code,prefecture,total_vaccinations,1st_vaccinations,2nd_vaccinations
 - `2nd_vaccinations_pfizer`: Number of doses of Pfizer vaccine per day for the second time
 - `1st_vaccinations_moderna`: Number of doses of Moderna vaccine per day for the first time
 - `2nd_vaccinations_moderna`: Number of doses of Moderna vaccine per day for the second time
-- `1st_vaccinations`: **Deprecated: Please use `1st_vaccinations_pfizer` instead**
-- `2nd_vaccinations`: **Deprecated: Please use `2nd_vaccinations_pfizer` instead**
+- `1st_vaccinations`: 1st_vaccinations_pfizer + 1st_vaccinations_moderna
+- `2nd_vaccinations`: 2nd_vaccinations_pfizer + 2nd_vaccinations_moderna
 
 ## Data structure: JSON
 
