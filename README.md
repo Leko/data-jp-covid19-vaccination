@@ -40,8 +40,12 @@ date,total_vaccinations,1st_vaccinations,2nd_vaccinations
 
 - `date`: Day. YYYY-MM-DD
 - `total_vaccinations`: The number of times vaccinations on that day
-- `1st_vaccinations`: The number of times the first vaccine was given on that day
-- `2nd_vaccinations`: The number of times the second vaccine was given on that day
+- `1st_vaccinations_pfizer`: Number of doses of Pfizer vaccine per day for the first time
+- `2nd_vaccinations_pfizer`: Number of doses of Pfizer vaccine per day for the second time
+- `1st_vaccinations_moderna`: Number of doses of Moderna vaccine per day for the first time
+- `2nd_vaccinations_moderna`: Number of doses of Moderna vaccine per day for the second time
+- `1st_vaccinations`: **Deprecated: Please use `1st_vaccinations_pfizer` instead**
+- `2nd_vaccinations`: **Deprecated: Please use `2nd_vaccinations_pfizer` instead**
 
 ### Data structure: prefecture/\*\*/\*.csv
 
@@ -54,8 +58,12 @@ code,prefecture,total_vaccinations,1st_vaccinations,2nd_vaccinations
 - `code`: For sorting. `01`~`46`
 - `prefecture`: Prefecture name such as `北海道`, `東京都`, `京都府`, and `神奈川県`
 - `total_vaccinations`: The number of times total vaccinations
-- `1st_vaccinations`: The number of times the first vaccine was given on that day
-- `2nd_vaccinations`: The number of times the second vaccine was given on that day
+- `1st_vaccinations_pfizer`: Number of doses of Pfizer vaccine per day for the first time
+- `2nd_vaccinations_pfizer`: Number of doses of Pfizer vaccine per day for the second time
+- `1st_vaccinations_moderna`: Number of doses of Moderna vaccine per day for the first time
+- `2nd_vaccinations_moderna`: Number of doses of Moderna vaccine per day for the second time
+- `1st_vaccinations`: **Deprecated: Please use `1st_vaccinations_pfizer` instead**
+- `2nd_vaccinations`: **Deprecated: Please use `2nd_vaccinations_pfizer` instead**
 
 ## Data structure: JSON
 
