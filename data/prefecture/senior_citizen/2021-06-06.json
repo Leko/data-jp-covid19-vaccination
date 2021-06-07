@@ -24,8 +24,8 @@
     "code": "04",
     "prefecture": "宮城県",
     "total_vaccinations": 146035,
-    "1st_vaccinations": 132300,
-    "2nd_vaccinations": 13735
+    "1st_vaccinations": 132306,
+    "2nd_vaccinations": 13729
   },
   {
     "code": "05",
@@ -73,8 +73,8 @@
     "code": "11",
     "prefecture": "埼玉県",
     "total_vaccinations": 411279,
-    "1st_vaccinations": 383748,
-    "2nd_vaccinations": 27531
+    "1st_vaccinations": 383749,
+    "2nd_vaccinations": 27530
   },
   {
     "code": "12",
@@ -87,15 +87,15 @@
     "code": "13",
     "prefecture": "東京都",
     "total_vaccinations": 865691,
-    "1st_vaccinations": 801060,
-    "2nd_vaccinations": 64631
+    "1st_vaccinations": 801066,
+    "2nd_vaccinations": 64625
   },
   {
     "code": "14",
     "prefecture": "神奈川県",
     "total_vaccinations": 435591,
-    "1st_vaccinations": 406658,
-    "2nd_vaccinations": 28933
+    "1st_vaccinations": 406659,
+    "2nd_vaccinations": 28932
   },
   {
     "code": "15",
@@ -185,15 +185,15 @@
     "code": "27",
     "prefecture": "大阪府",
     "total_vaccinations": 519719,
-    "1st_vaccinations": 478543,
-    "2nd_vaccinations": 41176
+    "1st_vaccinations": 478553,
+    "2nd_vaccinations": 41166
   },
   {
     "code": "28",
     "prefecture": "兵庫県",
     "total_vaccinations": 287013,
-    "1st_vaccinations": 260942,
-    "2nd_vaccinations": 26071
+    "1st_vaccinations": 260943,
+    "2nd_vaccinations": 26070
   },
   {
     "code": "29",
