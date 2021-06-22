@@ -338,5 +338,125 @@
     "2nd_vaccinations_pfizer": 83391,
     "1st_vaccinations_moderna": 112,
     "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-04",
+    "total_vaccinations": 159203,
+    "1st_vaccinations": 63563,
+    "2nd_vaccinations": 95640,
+    "1st_vaccinations_pfizer": 62634,
+    "2nd_vaccinations_pfizer": 95640,
+    "1st_vaccinations_moderna": 929,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-07",
+    "total_vaccinations": 239337,
+    "1st_vaccinations": 106581,
+    "2nd_vaccinations": 132756,
+    "1st_vaccinations_pfizer": 104435,
+    "2nd_vaccinations_pfizer": 132756,
+    "1st_vaccinations_moderna": 2146,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-08",
+    "total_vaccinations": 161922,
+    "1st_vaccinations": 72679,
+    "2nd_vaccinations": 89243,
+    "1st_vaccinations_pfizer": 71689,
+    "2nd_vaccinations_pfizer": 89243,
+    "1st_vaccinations_moderna": 990,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-09",
+    "total_vaccinations": 167384,
+    "1st_vaccinations": 68741,
+    "2nd_vaccinations": 98643,
+    "1st_vaccinations_pfizer": 67694,
+    "2nd_vaccinations_pfizer": 98643,
+    "1st_vaccinations_moderna": 1047,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-10",
+    "total_vaccinations": 136591,
+    "1st_vaccinations": 53969,
+    "2nd_vaccinations": 82622,
+    "1st_vaccinations_pfizer": 52250,
+    "2nd_vaccinations_pfizer": 82622,
+    "1st_vaccinations_moderna": 1719,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-11",
+    "total_vaccinations": 147983,
+    "1st_vaccinations": 56503,
+    "2nd_vaccinations": 91480,
+    "1st_vaccinations_pfizer": 54834,
+    "2nd_vaccinations_pfizer": 91480,
+    "1st_vaccinations_moderna": 1669,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-14",
+    "total_vaccinations": 214965,
+    "1st_vaccinations": 91429,
+    "2nd_vaccinations": 123536,
+    "1st_vaccinations_pfizer": 85819,
+    "2nd_vaccinations_pfizer": 123536,
+    "1st_vaccinations_moderna": 5610,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-15",
+    "total_vaccinations": 115363,
+    "1st_vaccinations": 43415,
+    "2nd_vaccinations": 71948,
+    "1st_vaccinations_pfizer": 40459,
+    "2nd_vaccinations_pfizer": 71948,
+    "1st_vaccinations_moderna": 2956,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-16",
+    "total_vaccinations": 118735,
+    "1st_vaccinations": 46694,
+    "2nd_vaccinations": 72041,
+    "1st_vaccinations_pfizer": 43912,
+    "2nd_vaccinations_pfizer": 72041,
+    "1st_vaccinations_moderna": 2782,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-17",
+    "total_vaccinations": 129330,
+    "1st_vaccinations": 51537,
+    "2nd_vaccinations": 77793,
+    "1st_vaccinations_pfizer": 46926,
+    "2nd_vaccinations_pfizer": 77793,
+    "1st_vaccinations_moderna": 4611,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-18",
+    "total_vaccinations": 125948,
+    "1st_vaccinations": 52257,
+    "2nd_vaccinations": 73691,
+    "1st_vaccinations_pfizer": 50112,
+    "2nd_vaccinations_pfizer": 73691,
+    "1st_vaccinations_moderna": 2145,
+    "2nd_vaccinations_moderna": 0
+  },
+  {
+    "date": "2021-06-21",
+    "total_vaccinations": 198780,
+    "1st_vaccinations": 74997,
+    "2nd_vaccinations": 123783,
+    "1st_vaccinations_pfizer": 67154,
+    "2nd_vaccinations_pfizer": 123679,
+    "1st_vaccinations_moderna": 7843,
+    "2nd_vaccinations_moderna": 104
   }
 ]
