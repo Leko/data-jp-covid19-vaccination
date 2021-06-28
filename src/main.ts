@@ -33,8 +33,10 @@ Promise.all(
           })
         )
       })
+      .catch((e) => {
+        console.error(ds.url)
+        console.error(e.stack)
+        process.exit(1)
+      })
   )
-).catch((e) => {
-  console.error(e.stack)
-  process.exit(1)
-})
+)

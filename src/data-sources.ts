@@ -77,7 +77,7 @@ export const dataSources: DataSrouce[] = [
   },
   {
     base: path.join(__dirname, '..', 'data', 'prefecture', 'medical_workers'),
-    url: 'https://www.kantei.go.jp/jp/content/IRYO-kenbetsu-vaccination_data.xlsx',
+    url: 'https://www.kantei.go.jp/jp/content/IRYO-kenbetsu-vaccination_data2.xlsx',
     getSheet: sheetByName('医療従事者'),
     getData: parseAsPrefectures(
       {
