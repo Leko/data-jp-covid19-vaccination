@@ -518,5 +518,15 @@
     "2nd_vaccinations_pfizer": 53790,
     "1st_vaccinations_moderna": 3367,
     "2nd_vaccinations_moderna": 1255
+  },
+  {
+    "date": "2021-06-30",
+    "total_vaccinations": 79179,
+    "1st_vaccinations": 32101,
+    "2nd_vaccinations": 47078,
+    "1st_vaccinations_pfizer": 30313,
+    "2nd_vaccinations_pfizer": 46697,
+    "1st_vaccinations_moderna": 1788,
+    "2nd_vaccinations_moderna": 381
   }
 ]
