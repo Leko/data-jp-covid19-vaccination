@@ -17,8 +17,8 @@ type DataSrouce = {
 export const dataSources: DataSrouce[] = [
   {
     base: path.join(__dirname, '..', 'data', 'nationwide', 'medical_workers'),
-    url: 'https://www.kantei.go.jp/jp/content/IRYO-vaccination_data3.xlsx',
-    getSheet: sheetByName('医療従事者'),
+    url: 'https://www.kantei.go.jp/jp/content/vaccination_data5.xlsx',
+    getSheet: sheetByName('医療従事者等'),
     getData: parseAsNationwide(
       {
         dataStartRow: 6,
@@ -47,19 +47,19 @@ export const dataSources: DataSrouce[] = [
   },
   {
     base: path.join(__dirname, '..', 'data', 'nationwide', 'senior_citizen'),
-    url: 'https://www.kantei.go.jp/jp/content/KOREI-vaccination_data3.xlsx',
-    getSheet: sheetByName('高齢者等'),
+    url: 'https://www.kantei.go.jp/jp/content/vaccination_data5.xlsx',
+    getSheet: sheetByName('一般接種'),
     getData: parseAsNationwide(
       {
         dataStartRow: 6,
       },
       (sheet, rowCount) => {
-        const firstVaccinationsPfizer = parseInt(sheet[`D${rowCount}`].v, 10)
-        const secondVaccinationsPfizer = parseInt(sheet[`F${rowCount}`].v, 10)
+        const firstVaccinationsPfizer = parseInt(sheet[`H${rowCount}`].v, 10)
+        const secondVaccinationsPfizer = parseInt(sheet[`I${rowCount}`].v, 10)
         const firstVaccinationsModerna =
-          parseInt(sheet[`E${rowCount}`]?.v, 10) || 0
+          parseInt(sheet[`J${rowCount}`]?.v, 10) || 0
         const secondVaccinationsModerna =
-          parseInt(sheet[`G${rowCount}`]?.v, 10) || 0
+          parseInt(sheet[`K${rowCount}`]?.v, 10) || 0
 
         return {
           date: new Date(sheet[`A${rowCount}`].w!),
